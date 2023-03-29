@@ -23,12 +23,12 @@ string[] GenSearchArray(string[] array, int count)
     }
     return res;
 }
-string[] array = { "Vlad", "Alex", "Tom", "Io", "Petkevich" };
+string[] people = { "Vlad", "Alex", "Tom", "Io", "Petkevich" };
 System.Console.WriteLine("Исходный массив:");
 System.Console.WriteLine("      ↓↓↓     ");
-Print1DArray(array);
+Print1DArray(people);
 System.Console.WriteLine();
-string[] arraysearch = GenSearchArray(array,3);
+string[] arraysearch = GenSearchArray(people,3);
 Print1DArray(arraysearch);
 System.Console.WriteLine("   🠕🠕🠕");
 System.Console.WriteLine("Отсортированный массив:");
