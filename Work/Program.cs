@@ -1,4 +1,5 @@
 ﻿//Вывод массива в консоль
+Console.Clear();
 void Print1DArray(string[] array)
 {
     Console.Write("[");
@@ -9,13 +10,11 @@ void Print1DArray(string[] array)
     Console.WriteLine($"{array[array.Length - 1]}]");
 }
 
-string[] array = { "Vlad", "Alex", "Tom", "Io", "Petkevich" };
-Print1DArray(array);
 
 string[] GenSearchArray(string[] array, int count)
 {
     string[] res = new string[0];
-    for (int i = 0; i <= array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= count)
         {
@@ -24,3 +23,12 @@ string[] GenSearchArray(string[] array, int count)
     }
     return res;
 }
+string[] array = { "Vlad", "Alex", "Tom", "Io", "Petkevich" };
+System.Console.WriteLine("Исходный массив:");
+System.Console.WriteLine("      ↓↓↓     ");
+Print1DArray(array);
+System.Console.WriteLine();
+string[] arraysearch = GenSearchArray(array,3);
+Print1DArray(arraysearch);
+System.Console.WriteLine("   🠕🠕🠕");
+System.Console.WriteLine("Отсортированный массив:");
